@@ -1,0 +1,54 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <header>
+      <h1>Swift</h1>
+      <div id="search" class="search">
+      </div>
+    </header>
+    <main ng-controller="ServiceCtrl as service">
+      <header>
+        <div>
+          <span>{{service.group}}</span>
+          <h1>{{service.name}}</h1>
+          <a ng-href="{{service.jira}}" />
+          <a ng-href="{{service.confluence}}" />
+          <menu>
+            <li ng-repeat="repository in service.repositories">
+              <a ng-href="{{repository.url}}" />
+            </li>
+          </menu>
+        </div>
+        <div>Owners</div>
+      </header>
+
+      <section>
+        <section id="deployments">
+          <h2>Deployment Plans</h2>
+          <div id="deployment" ng-repeat="deployment in service.deployments">
+            <div>{{deployment.name}}</div>
+            <div>{{deployment.description}}</div>
+            <a ng-href="{{deployment.url}}">Bamboo</a>
+            <a ng-href="{{deployment.url}}">Deploy</a>
+          </div>
+        </section>
+
+        <section id="instances">
+          <h2>Instance</h2>
+          <div ng-repeat="instance in service.instances">
+            <h3>{{instance.name}}</h3>
+            <h3>{{instance.version_of_artifact}}</h3>
+            <div>{{instance.description}}</div>
+            <div ng-repeat="endpoint in instance.endpoints">
+              <div>{{endpoint.name}}</div>
+              <div>{{endpoint.endpoint_type}}</div>
+              <a ng-href="{{endpoint.url}}">Address</a>
+              <div>{{endpoint.description}}</div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
