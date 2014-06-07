@@ -1,0 +1,11 @@
+applications:
+- name: swift
+  memory: 1024M
+  instances: 1
+  host: swift
+  domain: cfapps.io
+  path: .
+  timeout: 120
+  command: bundle exec rake db:migrate && bundle exec rails s -p $PORT
+  services:
+    - swift-pg
