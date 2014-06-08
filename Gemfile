@@ -35,8 +35,6 @@ group :development do
   gem 'guard-rspec', require: false
 end
 
-gem 'rspec-rails', group: [:development, :test]
-
 # Asserts
 source 'https://rails-assets.org'
 
