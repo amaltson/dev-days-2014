@@ -8,18 +8,23 @@
 
 .site-nav {
 	.site-logo {
-		background-image: image-url("logo.png");
-		display: block;
 		float: left;
-		height: image-height("logo.png");
-		padding-right: 10px;
-		width: image-width("logo.png");
 	}
+}
+
+.site-logo {
+	background-image: image-url("logo.png");
+	display: block;
+	height: image-height("logo.png");
+	width: image-width("logo.png");
 }
 
 .search-bar {
 	display: inline-block;
 	padding-left: 20px;
+	.icon-magnifying-glass {
+		margin-right: 10px;
+	}
 }
 
 .search-input {
@@ -30,4 +35,20 @@
 	outline: 0;
 	padding: 5px 5px 5px 10px;
 	width: 400px;
+}
+
+.header-link {
+	background-color: $light-grey;
+	color: black;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 500;
+	margin-right: 20px;
+	padding: 5px 10px;
+	.icon-confluence-logo {
+		vertical-align: -14%;
+	}
+	.icon-github-logo {
+		vertical-align: -18%;
+	}
 }

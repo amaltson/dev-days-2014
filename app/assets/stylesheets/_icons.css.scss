@@ -7,6 +7,19 @@
 	background-image: image-url("magnifying-glass.png");
 	display: inline-block;
 	height: image-height("magnifying-glass.png");
-	margin-right: 10px;
 	width: image-width("magnifying-glass.png");
+}
+
+.icon-confluence-logo {
+	background-image: image-url("confluence-logo.png");
+	display: inline-block;
+	height: image-height("confluence-logo.png");
+	width: image-width("confluence-logo.png");
+}
+
+.icon-github-logo {
+	background-image: image-url("github-logo.png");
+	display: inline-block;
+	height: image-height("github-logo.png");
+	width: image-width("github-logo.png");
 }
