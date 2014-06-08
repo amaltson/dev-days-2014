@@ -39,6 +39,7 @@ end
 source 'https://rails-assets.org'
 
 gem "rails-assets-angular"
+gem "rails-assets-angular-ui-router", '~> 0.2.10'
 group :development, :test do
   gem 'rails-assets-angular-mocks'
 end
