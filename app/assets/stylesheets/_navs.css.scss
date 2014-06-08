@@ -1,0 +1,18 @@
+//
+// Navs
+// --------------------------------------------------
+
+
+// Site Nav
+// ------------------
+
+.site-nav {
+	.site-logo {
+		background-image: image-url("logo.png");
+		display: block;
+		float: left;
+		height: image-height("logo.png");
+		width: image-width("logo.png");
+	}
+}
+
