@@ -23,3 +23,10 @@
 	height: image-height("github-logo.png");
 	width: image-width("github-logo.png");
 }
+
+.icon-bamboo-logo {
+	background-image: image-url("bamboo-logo.png");
+	display: inline-block;
+	height: image-height("bamboo-logo.png");
+	width: image-width("bamboo-logo.png");
+}

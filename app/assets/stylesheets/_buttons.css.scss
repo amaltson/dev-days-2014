@@ -1,0 +1,9 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Augment Bootstrap btn class
+.btn {
+	@include single-box-shadow($dark-grey, 1px, 1px, 0px, 1px)
+}

@@ -8,7 +8,7 @@
 }
 
 .service-header {
-	padding-bottom: 40px;
+	padding-bottom: 50px;
 	border-bottom: 1px solid $grey;
 	// Vertically center Bootstrap grid columns
 	& > div {
@@ -27,5 +27,40 @@
 	}
 	span {
 		font-weight: 500;
+	}
+}
+
+.service-section {
+	margin-top: 50px;
+	.service-section-title {
+		margin-bottom: 35px;
+	}
+}
+
+
+// Deployment Plans
+// ------------------
+
+.deployment-plan {
+	background-color: $light-grey;
+	display: inline-block;
+	margin-right: 30px;
+	padding: 10px;
+	width: 290px;
+	h5 {
+		font-size: 20px;
+		font-weight: 200;
+		margin-bottom: 15px;
+	}
+	.icon-bamboo-logo {
+		margin-right: 5px;
+		vertical-align: -15%;
+	}
+	.bamboo-link {
+		display: block;
+		margin-bottom: 15px;
+	}
+	.btn {
+		width: 100%;
 	}
 }
