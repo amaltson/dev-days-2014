@@ -52,3 +52,14 @@
 		vertical-align: -18%;
 	}
 }
+
+.source-dropdown {
+	display: none;
+
+	@include single-box-shadow($light-grey, 0px, 0px, 4px, 1px);
+	@include border-radius(5px);
+	left: 115px;
+	position: absolute;
+	top: 30px;
+	z-index: 10;
+}
