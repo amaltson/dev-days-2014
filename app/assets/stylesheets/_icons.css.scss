@@ -30,3 +30,10 @@
 	height: image-height("bamboo-logo.png");
 	width: image-width("bamboo-logo.png");
 }
+
+.icon-anchor-link {
+	background-image: image-url("anchor-link.png");
+	display: inline-block;
+	height: image-height("anchor-link.png");
+	width: image-width("anchor-link.png");
+}

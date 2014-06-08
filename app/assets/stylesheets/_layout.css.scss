@@ -31,9 +31,14 @@
 }
 
 .service-section {
-	margin-top: 50px;
+	margin-top: 80px;
 	.service-section-title {
 		margin-bottom: 35px;
+	}
+	a {
+		color: $light-blue;
+		font-size: 14px;
+		font-weight: 500;
 	}
 }
 
@@ -64,3 +69,49 @@
 		width: 100%;
 	}
 }
+
+// Instances
+// ------------------
+
+.instance {
+	font-size: 20px;
+	font-weight: 200;
+	margin-bottom: 60px;
+	width: 100%;
+	.instance-title-bar {
+		margin-bottom: 3px;
+	}
+	b {
+		font-weight: 500;
+	}
+	table {
+		width: 100%;
+		td:first-child {
+			border-left: 5px solid $blue;
+			text-align: left;
+		}
+		td {
+			background-color: $light-grey;
+			border-bottom: 2px solid white;
+			padding: 15px 20px;
+		}
+		td:last-child {
+			text-align: right;
+		}
+		tr:last-child {
+			td {
+				border-bottom: 0;
+			}
+		}
+	}
+	.icon-anchor-link {
+		vertical-align: -10%;
+	}
+}
+
+
+
+
+
+
+
