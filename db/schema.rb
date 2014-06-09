@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140608163451) do
+ActiveRecord::Schema.define(version: 20140609193854) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "instances", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "version_of_artifact"
+    t.integer  "service_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "instances", ["service_id"], name: "index_instances_on_service_id", using: :btree
 
   create_table "services", force: true do |t|
     t.string   "name"
