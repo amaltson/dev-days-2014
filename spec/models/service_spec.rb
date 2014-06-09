@@ -1,11 +1,13 @@
 require 'rails_helper'
 
 describe Service, type: :model do
-  let(:service) do
+  before(:each) do
     service = Service.new(name: 'CV', group: 'Core')
     service.instances << Instance.create!(name: 'CV 4', version_of_artifact: '4')
-    service
+    service.save!
   end
+
+  let(:service) { Service.all.first }
 
   it "should save a new service with instances" do
     expect(service.name).to eq('CV')
