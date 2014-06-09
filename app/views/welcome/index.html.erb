@@ -1,2 +1,137 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<header class="site-header">
+	<nav class="site-nav">
+		<a class="site-logo" href="/"></a>
+		<div class="search-bar">
+			<span class="icon-magnifying-glass"></span><input type="search" class="search-input" />
+		</div>
+	</nav>
+</header>
+
+<main class="container">
+	<header class="row service-header">
+		<div class="col-xs-6">
+			<span class="service-group">Core Service</span>
+			<h1 class="service-title">Commuted Value Web Service</h1>
+		</div><!-- Setting display to inline-block makes inter-element spaces break grid - use comments to erase spaces between elements
+	 --><div class="col-xs-3">
+			<a href="#" class="header-link">
+				<span class="icon-confluence-logo"></span> Docs <span>1</span>
+			</a>
+			<a href="#" class="header-link">
+				<span class="icon-github-logo"></span> Source <span class="caret"></span> <span>4</span>
+			</a>
+			<ul class="list-group source-dropdown">
+			    <li class="list-group-item"><a href="#">com.otpp.ws.commutedValue</a></li>
+			    <li class="list-group-item"><a href="#">com.otpp.domain.commutedvalue</a></li>
+			    <li class="list-group-item"><a href="#">benefit-dev-props</a></li>
+			    <li class="list-group-item"><a href="#">commutedvalue-prod-properties </a></li>
+			</ul>
+		</div><!--
+	 --><div class="col-xs-3">
+			<div class="service-admin">
+				<%= image_tag "liam-neeson.png" %>
+				<span>Liam Neeson</span>
+			</div>
+			<div class="service-admin">
+				<%= image_tag "russell-brand.png" %>
+				<span>Russell Brand</span>
+			</div>
+		</div>
+	</header>
+	<section class="service-section">
+		<h2 class="service-section-title">Deployment Plans</h2>
+		<div>
+			<div class="deployment-plan">
+				<h5>wasdev1-snapshot</h5>
+				<a class="bamboo-link" href="#"><span class="icon-bamboo-logo"></span>Bamboo</a>
+				<button class="btn btn-success">Deploy</button>
+			</div>
+			<div class="deployment-plan">
+				<h5>wasdev1-released</h5>
+				<a class="bamboo-link" href="#"><span class="icon-bamboo-logo"></span>Bamboo</a>
+				<button class="btn btn-success">Deploy</button>
+			</div>
+		</div>
+	</section>
+	<section class="service-section">
+		<h2 class="service-section-title">Instances</h2>
+		<div class="instance">
+			<div class="instance-title-bar">
+				<b>Commuted Value Service 4</b>
+				<span class="pull-right"><b>4.0.0</b> [2013-11-05 18:26:00 EST]</span>
+			</div>
+			<table>
+				<tbody>
+					<tr>
+						<td>commutedValueService4</td>
+						<td>Direct</td>
+						<td>
+							<a href="#"><span class="icon-anchor-link"></span>Address</a>
+						</td>
+						<td>Direct endpoint to version 4</td>
+					</tr>
+					<tr>
+						<td>Development.WESB.commutedValueService4</td>
+						<td>WESB Mediation</td>
+						<td>
+							<a href="#"><span class="icon-anchor-link"></span>Address</a>
+						</td>
+						<td>WESB mediation to version 4</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="instance">
+			<div class="instance-title-bar">
+				<b>Commuted Value Service 5</b>
+				<span class="pull-right"><b>5.0.0</b> [2014-02-26 12:26:09 EST]</span>
+			</div>
+			<table>
+				<tbody>
+					<tr>
+						<td>commutedValueService4</td>
+						<td>Direct</td>
+						<td>
+							<a href="#"><span class="icon-anchor-link"></span>Address</a>
+						</td>
+						<td>Direct endpoint to version 5</td>
+					</tr>
+					<tr>
+						<td>Development.WESB.commutedValueService5</td>
+						<td>WESB Mediation</td>
+						<td>
+							<a href="#"><span class="icon-anchor-link"></span>Address</a>
+						</td>
+						<td>WESB mediation to version 5</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="instance">
+			<div class="instance-title-bar">
+				<b>Commuted Value Service 6</b>
+				<span class="pull-right"><b>6.0.0</b> [2014-04-25 11:47:39 EST]</span>
+			</div>
+			<table>
+				<tbody>
+					<tr>
+						<td>commutedValueService4</td>
+						<td>Direct</td>
+						<td>
+							<a href="#"><span class="icon-anchor-link"></span>Address</a>
+						</td>
+						<td>Direct endpoint to version 6</td>
+					</tr>
+					<tr>
+						<td>Development.WESB.commutedValueService6</td>
+						<td>WESB Mediation</td>
+						<td>
+							<a href="#"><span class="icon-anchor-link"></span>Address</a>
+						</td>
+						<td>WESB mediation to version 6</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</main>

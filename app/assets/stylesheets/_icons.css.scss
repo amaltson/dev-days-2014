@@ -1,0 +1,39 @@
+//
+// Icons
+// --------------------------------------------------
+
+
+.icon-magnifying-glass {
+	background-image: image-url("magnifying-glass.png");
+	display: inline-block;
+	height: image-height("magnifying-glass.png");
+	width: image-width("magnifying-glass.png");
+}
+
+.icon-confluence-logo {
+	background-image: image-url("confluence-logo.png");
+	display: inline-block;
+	height: image-height("confluence-logo.png");
+	width: image-width("confluence-logo.png");
+}
+
+.icon-github-logo {
+	background-image: image-url("github-logo.png");
+	display: inline-block;
+	height: image-height("github-logo.png");
+	width: image-width("github-logo.png");
+}
+
+.icon-bamboo-logo {
+	background-image: image-url("bamboo-logo.png");
+	display: inline-block;
+	height: image-height("bamboo-logo.png");
+	width: image-width("bamboo-logo.png");
+}
+
+.icon-anchor-link {
+	background-image: image-url("anchor-link.png");
+	display: inline-block;
+	height: image-height("anchor-link.png");
+	width: image-width("anchor-link.png");
+}

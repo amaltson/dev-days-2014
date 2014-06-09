@@ -10,6 +10,30 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+*/
+
+// Modeling architecutre after bootstrap-sass: https://github.com/twbs/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap.scss
+
+@import "compass";
+
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+ /*
  *= require_self
  */
+
+// Core CSS
+@import "scaffolding";
+@import "layout";
+@import "type";
+@import "forms";
+
+// Components
+@import "navs";
+@import "buttons";
+
+// Resources
+@import "icons";
+

@@ -1,0 +1,177 @@
+//
+// Layout
+// --------------------------------------------------
+
+
+.site-header {
+	margin: 20px;
+}
+
+.service-header {
+	padding-bottom: 50px;
+	border-bottom: 1px solid $grey;
+	// Vertically center Bootstrap grid columns
+	& > div {
+		display: inline-block;
+		float: none;
+		vertical-align: middle;
+	}
+}
+
+.service-admin {
+	display: inline-block;
+	margin-right: 20px;
+	img {
+		display: block;
+		margin: 0 auto 5px;
+	}
+	span {
+		font-weight: 500;
+	}
+}
+
+.service-section {
+	margin-top: 80px;
+	.service-section-title {
+		margin-bottom: 35px;
+	}
+	a {
+		color: $light-blue;
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+
+
+// Deployment Plans
+// ------------------
+
+.deployment-plan {
+	background-color: $light-grey;
+	display: inline-block;
+	margin-right: 30px;
+	padding: 10px;
+	width: 290px;
+	h5 {
+		font-size: 17px;
+		font-weight: 200;
+		margin-bottom: 15px;
+	}
+	.icon-bamboo-logo {
+		margin-right: 5px;
+		vertical-align: -15%;
+	}
+	.bamboo-link {
+		display: block;
+		margin-bottom: 15px;
+	}
+	.btn {
+		width: 100%;
+	}
+}
+
+// Instances
+// ------------------
+
+.instance {
+	font-size: 17px;
+	font-weight: 200;
+	margin-bottom: 60px;
+	width: 100%;
+	.instance-title-bar {
+		margin-bottom: 3px;
+	}
+	b {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	table {
+		width: 100%;
+		td:first-child {
+			border-left: 5px solid $blue;
+			text-align: left;
+		}
+		td {
+			background-color: $light-grey;
+			border-bottom: 2px solid white;
+			padding: 15px 20px;
+		}
+		td:last-child {
+			text-align: right;
+		}
+		tr:last-child {
+			td {
+				border-bottom: 0;
+			}
+		}
+	}
+	.icon-anchor-link {
+		vertical-align: -10%;
+	}
+}
+
+// Search Group
+// ------------------
+
+.search-group {
+	margin-top: 60px;
+	.search-group-title-bar {
+		h6 {
+			color: white;
+			display: inline-block;
+			font-weight: 200;
+			letter-spacing: 1px;
+			margin: 0;
+			padding: 10px 10px 5px 5px;
+		}
+	}
+	table {
+		width: 100%;
+		td {
+			border-bottom: 1px solid $light-grey2;
+			cursor: pointer;
+			padding: 25px 10px;
+		}
+		td:first-child {
+			padding-left: 35px;
+		}
+		tr:hover {
+			td{
+				background-color: $light-yellow;
+			}
+		}
+	}
+}
+
+.core-services {
+	.search-group-title-bar {
+		border-bottom: 6px solid $purple;
+	}
+	h6 {
+		background-color: $purple;	
+	}
+}
+
+.utility-services {
+	.search-group-title-bar {
+		border-bottom: 6px solid $green;
+	}
+	h6 {
+		background-color: $green;	
+	}
+}
+
+.lorem-services {
+	.search-group-title-bar {
+		border-bottom: 6px solid $red;
+	}
+	h6 {
+		background-color: $red;	
+	}
+}
+
+
+
+
+
+

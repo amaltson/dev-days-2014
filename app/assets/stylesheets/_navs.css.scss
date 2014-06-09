@@ -1,0 +1,65 @@
+//
+// Navs
+// --------------------------------------------------
+
+
+// Site Nav
+// ------------------
+
+.site-nav {
+	.site-logo {
+		float: left;
+	}
+}
+
+.site-logo {
+	background-image: image-url("logo.png");
+	display: block;
+	height: image-height("logo.png");
+	width: image-width("logo.png");
+}
+
+.search-bar {
+	display: inline-block;
+	padding-left: 20px;
+	.icon-magnifying-glass {
+		margin-right: 10px;
+	}
+}
+
+.search-input {
+	border-bottom: 1px solid $light-blue;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	outline: 0;
+	padding: 5px 5px 5px 10px;
+	width: 400px;
+}
+
+.header-link {
+	background-color: $light-grey;
+	color: black;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 500;
+	margin-right: 20px;
+	padding: 5px 10px;
+	.icon-confluence-logo {
+		vertical-align: -14%;
+	}
+	.icon-github-logo {
+		vertical-align: -18%;
+	}
+}
+
+.source-dropdown {
+	display: none;
+
+	@include single-box-shadow($light-grey, 0px, 0px, 4px, 1px);
+	@include border-radius(5px);
+	left: 115px;
+	position: absolute;
+	top: 30px;
+	z-index: 10;
+}
