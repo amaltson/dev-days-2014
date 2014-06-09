@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   
   resources :instances
 
+  resources :endpoints
+
   get '/views/:action' => 'static#:action'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
