@@ -7,11 +7,11 @@ Rails.application.routes.draw do
   root 'swift#index'
 
   resources :services do
-    resources :instances
+    resources :instances do
+      resources :endpoints 
+    end
   end
-
-  resources :endpoints
-
+   
   get '/views/:action' => 'static#:action'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
