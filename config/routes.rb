@@ -6,9 +6,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'swift#index'
 
-  resources :services
-  
-  resources :instances
+  resources :services do
+    resources :instances
+  end
 
   get '/views/:action' => 'static#:action'
   # Example of regular route:
