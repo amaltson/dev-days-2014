@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140609193854) do
+ActiveRecord::Schema.define(version: 20140609200715) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "endpoints", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "endpoint_type"
+    t.string   "url"
+    t.integer  "instance_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "endpoints", ["instance_id"], name: "index_endpoints_on_instance_id", using: :btree
 
   create_table "instances", force: true do |t|
     t.string   "name"

@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 describe EndpointsController, type: :controller do
+  let!(:endpoint_db) do
+    Endpoint.create!(name: 'cv4direct', endpoint_type: 'direct',
+                    url: 'http://something')
+  end
 
   describe "GET #index" do
     it "response with all the endpoints" do
