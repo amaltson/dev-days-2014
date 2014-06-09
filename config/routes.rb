@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   root 'swift#index'
 
   resources :services
+
+  get '/views/:action' => 'static#:action'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
