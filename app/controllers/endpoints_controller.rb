@@ -1,5 +1,5 @@
 class EndpointsController < ApplicationController
   def index
-    render json: {}
+    render json: Endpoint.all
   end
 end
