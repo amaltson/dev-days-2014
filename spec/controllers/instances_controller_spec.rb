@@ -24,4 +24,18 @@ describe InstancesController, type: :controller do
     end
   end
 
+  describe "GET #show" do
+    it "response with requested instance" do
+      get :show, { service_id: @service.id, id: @instance.id }
+      expect(response).to be_success
+      expect(response.status).to eq(200)
+      expect(response.content_type).to eq(Mime::JSON)
+
+      instance = JSON.parse(response.body, symbolize_names: true)
+
+      expect(instance[:name]).to eq(@instance.name)
+      expect(instance[:version_of_artifact]).to eq(@instance.version_of_artifact)
+    end
+  end
+
 end
