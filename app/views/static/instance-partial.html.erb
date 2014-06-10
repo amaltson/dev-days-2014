@@ -1,0 +1,22 @@
+
+<section class="service-section" >
+  <h2 class="service-section-title">Instances</h2>
+  <div class="instance" ng-repeat="instance in service.instancesData">
+    <div class="instance-title-bar">
+      <b>{{instance.name}}</b>
+      <span class="pull-right"><b>{{instance.version_of_artifact}}</b></span>
+    </div>
+    <table>
+      <tbody>
+        <tr ng-repeat="endpoint in service.endpointsData[$index]">
+          <td>{{endpoint.name}}</td>
+          <td>{{endpoint.endpoint_type}}</td>
+          <td>
+            <a ng-href="{{endpoint.url}}"><span class="icon-anchor-link"></span>Address</a>
+          </td>
+          <td>{{endpoint.description}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
