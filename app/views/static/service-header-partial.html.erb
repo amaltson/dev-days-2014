@@ -1,10 +1,10 @@
 <header class="row service-header">
   <div class="col-xs-6">
-    <span class="service-group">{{serviceCtrl.serviceData.group}}</span>
-    <h1 class="service-title">{{serviceCtrl.serviceData.name}}</h1>
+    <span class="service-group">{{service.serviceData.group}}</span>
+    <h1 class="service-title">{{service.serviceData.name}}</h1>
   </div><!-- Setting display to inline-block makes inter-element spaces break grid - use comments to erase spaces between elements
  --><div class="col-xs-3">
-    <a ng-href="{{serviceCtrl.serviceData.confluence}}" class="header-link">
+    <a ng-href="{{service.serviceData.confluence}}" class="header-link">
       <span class="icon-confluence-logo"></span> Docs <span>1</span>
     </a>
     <a href="#" class="header-link">
