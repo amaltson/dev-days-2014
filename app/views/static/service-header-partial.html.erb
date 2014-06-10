@@ -1,0 +1,30 @@
+<header class="row service-header">
+  <div class="col-xs-6">
+    <span class="service-group">{{serviceCtrl.serviceData.group}}</span>
+    <h1 class="service-title">{{serviceCtrl.serviceData.name}}</h1>
+  </div><!-- Setting display to inline-block makes inter-element spaces break grid - use comments to erase spaces between elements
+ --><div class="col-xs-3">
+    <a ng-href="{{serviceCtrl.serviceData.confluence}}" class="header-link">
+      <span class="icon-confluence-logo"></span> Docs <span>1</span>
+    </a>
+    <a href="#" class="header-link">
+      <span class="icon-github-logo"></span> Source <span class="caret"></span> <span>4</span>
+    </a>
+    <ul class="list-group source-dropdown">
+        <li class="list-group-item"><a href="#">com.otpp.ws.commutedValue</a></li>
+        <li class="list-group-item"><a href="#">com.otpp.domain.commutedvalue</a></li>
+        <li class="list-group-item"><a href="#">benefit-dev-props</a></li>
+        <li class="list-group-item"><a href="#">commutedvalue-prod-properties </a></li>
+    </ul>
+  </div><!--
+ --><div class="col-xs-3">
+    <div class="service-admin">
+      <%= image_tag "liam-neeson.png" %>
+      <span>Liam Neeson</span>
+    </div>
+    <div class="service-admin">
+      <%= image_tag "russell-brand.png" %>
+      <span>Russell Brand</span>
+    </div>
+  </div>
+</header>
