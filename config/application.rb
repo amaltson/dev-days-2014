@@ -11,6 +11,13 @@ module Swift
 
     config.generators.stylesheets = false
     config.generators.javascripts = false
+
+    # Disable for all serializers (except ArraySerializer)
+    ActiveModel::Serializer.root = false
+
+    # Disable for ArraySerializer
+    ActiveModel::ArraySerializer.root = false
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
