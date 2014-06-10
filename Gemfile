@@ -32,6 +32,8 @@ group :development do
 end
 
 # Asserts
+gem 'ngannotate-rails'
+
 source 'https://rails-assets.org'
 
 gem "rails-assets-angular"
