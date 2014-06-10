@@ -4,9 +4,15 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  root 'swift#index'
 
-  resources :services
+  resources :services do
+    resources :instances do
+      resources :endpoints 
+    end
+  end
+   
+  get '/views/:action' => 'static#:action'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

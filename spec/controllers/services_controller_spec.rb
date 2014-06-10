@@ -22,4 +22,17 @@ describe ServicesController, type: :controller do
       expect(service[:confluence]).to eq(service_db.confluence)
     end
   end
+
+  describe "GET #show" do
+    it "response with only the requested service" do
+      get :show, { id: service_db.id }
+      expect(response).to be_success
+      expect(response.status).to eq(200)
+      expect(response.content_type).to eq(Mime::JSON)
+
+      service = JSON.parse(response.body, symbolize_names: true)
+
+      expect(service[:name]).to eq(service_db.name)
+    end
+  end
 end

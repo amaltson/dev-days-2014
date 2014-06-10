@@ -1,0 +1,2 @@
+class SwiftController < ApplicationController
+end
